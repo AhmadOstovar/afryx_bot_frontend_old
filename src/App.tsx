@@ -16,8 +16,8 @@ function App() {
     const rawResponse = await fetch(baseUrl, {
       method: "POST",
       headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
+        Accept: "text/plain",
+        "Content-Type": "text/plain",
       },
       body: JSON.stringify({ query: searchWord }),
     });
